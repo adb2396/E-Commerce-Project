@@ -37,5 +37,3 @@
 - **JavaScript (ES6+)**
 - **CSS/SCSS**
 - **Axios/Fetch API** for HTTP requests
-
----
