@@ -26,7 +26,7 @@ export const allProductCategoriesSlice = createSlice({
 		builder.addCase(
 			getAllProductCategoriesAction.fulfilled,
 			(state, action) => {
-				state.action = false
+				state.isLoading = false
 				state.data = action.payload
 			}
 		)

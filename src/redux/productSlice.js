@@ -24,7 +24,7 @@ export const productSlice = createSlice({
 			state.isLoading = true
 		})
 		builder.addCase(getProductAction.fulfilled, (state, action) => {
-			state.action = false
+			state.isLoading = false
 			state.data = action.payload
 		})
 		builder.addCase(getProductAction.rejected, (state, action) => {
