@@ -1,9 +1,15 @@
+import { Outlet } from 'react-router-dom'
 import './App.css'
+import Navbar from './components/Navbar/Navbar'
 
 function App() {
+	// state
+
 	return (
 		<div className="App">
-			<div>This is ecommerce app</div>
+			<Navbar />
+			{/* <CategoryNavbar /> */}
+			<Outlet />
 		</div>
 	)
 }

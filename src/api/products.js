@@ -22,7 +22,7 @@ export async function getSingleProduct(id) {
 export async function searchProducts(query) {
 	try {
 		const response = await axiosInstance.get(
-			`${API_ROUTES.products}/search=?${query}`
+			`${API_ROUTES.products}/search?q=${query}`
 		)
 		return response.data.products
 	} catch (e) {
